@@ -1,0 +1,5 @@
+.show-hours {
+    display: grid;
+    grid-row-gap: 5px;
+}
+

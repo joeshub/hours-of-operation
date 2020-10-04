@@ -1,0 +1,73 @@
+.edit-hours {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-row-gap: 25px;
+}
+@media (min-width: 768px) {
+    .edit-hours {
+        grid-row-gap: 5px;
+    }
+}
+
+.edit-hours-day {
+    display: grid;
+    grid-template-areas:
+     "top top"
+     "bottom bottom";
+    align-items: center;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .edit-hours-day {
+        display: grid;
+        grid-template-areas: none;
+        grid-auto-flow: column;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 2fr 1fr 3fr 3fr 1fr;
+        align-items: center;
+        grid-column-gap: 20px;
+        margin-top: 0;
+    }
+}
+
+.special-hours {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .special-hours {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-row-gap: 5px;
+    }
+}
+
+.special-hours-day {
+    display: grid;
+    grid-template-areas:
+        "top top"
+        "middle middle"
+        "bottom bottom";
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .special-hours-day {
+        grid-template-areas: none;
+        grid-auto-flow: column;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 2fr 1fr 3fr 3fr 1fr;
+        align-items: center;
+        grid-column-gap: 20px;
+        margin-top: 0px;
+    }
+}
+
+.day-name {
+    width: 120px;
+    font-weight: bold;
+}
