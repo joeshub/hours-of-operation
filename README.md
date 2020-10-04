@@ -51,8 +51,8 @@ npm start
 - Tested for color accessibility
 
 ## Data models
-```json
-regularHours = [
+```js
+const regularHours = [
     {
         id: 0,
         name: 'Sunday',
@@ -67,10 +67,10 @@ regularHours = [
     }
 ]
 
-specialHours = [
+const specialHours = [
     {
         id: 0,
-        date: new Date()
+        date: new Date(),
         isOpen: true,
         open24Hrs: false,
         times: [
